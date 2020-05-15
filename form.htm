@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+    <head>
+        <title>디미고</title>
+        <meta charset="utf-8">
+        <style>
+            body {
+                background-color: yellow;
+            }
+            
+            a {
+                text-decoration :none ;
+                color :black ;
+            }
+        </style>
+    </head>
+
+    <body>
+        스마트문화앱콘텐츠제작<br>
+        <!-- 폼만들기 연습 -->
+        <form action="seratch.php" method="post" autocomplete="off">
+
+            <label>검색<input type="text" title="검색"></label>
+
+            <label for="user-submit">입력2</label>
+            <input type="text" id="user-submit">
+            <input type="submit" value="전송">
+
+            <input type="text" id="user">
+            <input type="submit" value="전송">
+
+            <ul>
+                <li><label><input type="checkbox" value="grm">문법</label></li>
+                <li><input type="checkbox" value="wr">작문</li>
+            </ul>
+            <input type="submit" value="전송">
+
+    
+        </form>
+        <form>
+            <fieldset>
+                <legend>개인정보</legend>
+                <label for="name">이름</label>
+                <input type="text" id="name">
+                <label for="mail">이메일</label>
+                <input type="text" id="mail" size="50">
+            </fieldset>
+
+            <fieldset>
+                <legend>로그인 정보</legend>
+                <label for="id">ID</label>
+                <input type="text" id="id" size="5" value="id_test" maxlength="7">
+                <label for="pwd">Password</label>
+                <input type="password" id="pwd">
+
+                <input type="hidden" name="data" value="Y">
+                <input type="search"><input type="submit" value="검색">
+
+                <input type="email">
+
+                <input type="number" min="1" maxlength="10" value="1">개
+                <input type="range" min="0" maxlength="10" step="1" value="1">
+                <label><input type="radio" name="subject" value="com">com</label>
+                <label><input type="radio" name="subject" value="com1">com1</label>
+
+                <label><input type="checkbox" name="mail" value="mail">mail</label>
+                <label><input type="checkbox" name="phone" value="phone">phone</label>
+
+                <label>색상<input type="color" value="#151916"></label>
+                <label>기간<input type="date"></label>
+                <input type="time" value="09:00">
+                <input type="datetime-local" value="2020-05-08T09:00">
+
+            </fieldset>   
+        </form>
+
+    </body>
+</html>
